@@ -11,7 +11,7 @@ export const Service = ({ waitingTime }) => {
       setWaitingTimeText("Less than an hour");
     } else if (waitingTime === 2) {
       setWaitingTimeText("Less than two hours");
-    } else {
+    } else if (waitingTime === 3) {
       setWaitingTimeText("More than two hours");
     }
   }, [waitingTime]);
