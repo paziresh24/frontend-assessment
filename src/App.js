@@ -12,6 +12,7 @@ const App = () => {
       .then((data) => setData(data));
   }, []);
 
+  if (!data) return null;
   return (
     <div className="h-screen bg-slate-100">
       <header className="flex h-16 bg-white opacity-60">
