@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import DoctorHead from "./components/doctorHead";
 import Service from "./components/service";
 import logo from "./logo.svg";
 
@@ -10,6 +9,17 @@ const App = () => {
     fetch("/profile.json")
       .then((response) => response.json())
       .then((data) => setData(data));
+    //   Return Data:
+    //   name,
+    //   family,
+    //   image,
+    //   viewCount,
+    //   isBookmarked,
+    //   profileUrl,
+    //   expertise,
+    //   satisfaction,
+    //   commentsCount,
+    //   waitingTime
   }, []);
 
   if (!data) return null;
@@ -31,7 +41,7 @@ const App = () => {
       </header>
       <main className="container grid grid-cols-3 pt-10 mx-auto gap-7">
         <div className="flex flex-col col-span-2 gap-5">
-          <DoctorHead {...data} />
+          {/* Doctor Head */}
           <div className="bg-white rounded-lg h-96 bg-opacity-60" />
           <div className="h-56 bg-white rounded-lg bg-opacity-60" />
         </div>

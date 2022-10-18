@@ -1,5 +1,7 @@
 ## Paziresh24 FrontEnd Assessment
 
+![output](./readmeAssets/output.png)
+
 ### Setup
 
 1. Fork this repository
@@ -28,13 +30,20 @@ npm start
 
 ---
 
-### 🎫 Service Card
+### 🎫 Service Card `src/components/service`
 
 ![service card](./readmeAssets/serviceCard.png)
 
-> Rewrite the section to convert waiting time to waiting time text
+> Refactor the section to convert waiting time to waiting time text
 
 **💥so that there is no need for useEffect and useState.**
+
+| waiting time | waiting time text      |
+| ------------ | ---------------------- |
+| 0            | Less than half an hour |
+| 1            | Less than an hour      |
+| 2            | Less than two hours    |
+| 3            | More than two hours    |
 
 ---
 
@@ -42,9 +51,17 @@ npm start
 
 ![doctor head](./readmeAssets/doctorHead.png)
 
+### Develop the UI of this Card
+
+> Give the required data of this card through the `props` in the `App.js` file
+
+### Perform the logical tasks below.
+
 #### 1. View Count
 
 > Number formatting: 32000 👉 32K
+
+![view count](./readmeAssets/viewcount.png)
 
 #### 2. Save Button
 
@@ -54,15 +71,19 @@ npm start
 
 > By click on the button, its status can be changed as a toggle
 
+![save button](./readmeAssets/savebutton.gif)
+
 #### 3. Share Button
 
 > By click the button, the sharing window will be displayed
 
 The doctor's name should be included in the **title**
 
-![doctor head](./readmeAssets/shareWindow.png)
+![share window](./readmeAssets/shareWindow.png)
 
 #### 4. Conditional rendering for show trust icon
+
+![trust icon](./readmeAssets/trust.png)
 
 | Property      | Condition                            |
 | ------------- | ------------------------------------ |
