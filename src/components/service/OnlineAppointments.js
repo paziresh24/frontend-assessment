@@ -1,4 +1,4 @@
-import Button from "../button/Button";
+import Button from "../button/PrimaryButton";
 
 export const OnlineApointments = ({ waitingTime }) => {
   let waitingTimeText;
@@ -32,9 +32,7 @@ export const OnlineApointments = ({ waitingTime }) => {
           Average waiting time for a visit: <b>{waitingTimeText}</b>
         </li>
       </ul>
-      <Button className='w-full p-3 font-semibold text-white transition-colors bg-blue-600 rounded-lg hover:bg-blue-700'>
-        Get Turn
-      </Button>
+      <Button>Get Turn</Button>
     </div>
   );
 };
